@@ -14,8 +14,9 @@ const PORT_CLIENT = process.env.PORT_CLIENT;
 
 app.use(
   cors({
-    origin: ['https://twitter-client-one.vercel.app'],
-    credentials: true,
+    origin: "https://twitter-client-one.vercel.app", // Your frontend URL
+    credentials: true, // Allow cookies
+    methods: ["GET", "POST", "PUT", "DELETE", "PATCH"], // Allow all necessary HTTP methods
   })
 );
 app.use(cookieParser());

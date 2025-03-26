@@ -7,7 +7,6 @@ const cookieOptions = {
   httpOnly: true,
   secure: true, // Required for HTTPS
   sameSite: "None", // Needed for cross-origin cookies
-  domain: "onrender.com", // Ensure cookie is available across backend
 };
 
 // SIGN UP
