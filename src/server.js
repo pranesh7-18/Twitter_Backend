@@ -14,7 +14,7 @@ const PORT_CLIENT = process.env.PORT_CLIENT;
 
 app.use(
   cors({
-    origin: [`http://localhost:${PORT_CLIENT}`,'https://twitter-client-one.vercel.app'],
+    origin: ['https://twitter-client-one.vercel.app'],
     credentials: true,
   })
 );
